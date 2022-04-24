@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Kesayangan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="banner" id="sec">
+        <header>
+            <a href="#" class="logo">UTP Pemrograman Web</a>
+            <div id="toggle" onclick="toggle()"></div>
+        </header>
+        <div class="content">
+            <h2> Hai Semua,<br> Selamat Datang</h2>
+            <p>Namaku Muhammad Ega Putra Anzani, dengan NPM
+                2017051010, saat ini, aku sedang melaksanakan
+                kuliah di Universitas Lampung tepatnya di jurusan
+                Ilmu Komputer Angkatan 2020.
+            </p>
+            <a href="table.html">Jadwal Pelajaran</a>
+        </div>
+        <ul class="sci">
+            <li><a href="https://www.facebook.com/megaputraanzani/"><img src="facebook.png"></a></li>
+            <li><a href="https://twitter.com/ega_jukas"><img src="twitter.png"></a></li>
+            <li><a href="https://www.instagram.com/raanzani64/"><img src="ig.png"></a></li>
+        </ul>
+    </section>
+    <div id="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Link Perkuliahan</a></li>
+            <li><a href="#">Daftar Tugas</a></li>
+            <li><a href="#">Nomor Dosen</a></li>
+            <li><a href="https://siakadu.unila.ac.id/">Siakad Unila</a></li>
+        </ul>
+    </div>
+    <script type="text/javascript">
+        function toggle(){
+            var sec = document.getElementById("sec");
+            var nav = document.getElementById("navigation");
+            sec.classList.toggle("active");
+            nav.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>
